@@ -7,4 +7,4 @@ def load_users():
     return pd.read_csv(USERS_CSV)
 
 def load_tasks():
-    return pd.read_csv(TASKS_CSV)
+    return pd.read_csv(TASKS_CSV, low_memory=False)
